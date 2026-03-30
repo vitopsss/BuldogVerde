@@ -1,0 +1,7 @@
+{
+  "name": "Buldogue Verde - Clínica Veterinária 24h",
+  "description": "Website de alta conversão para clínica veterinária premium em Manaus.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
