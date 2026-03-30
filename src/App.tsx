@@ -373,7 +373,6 @@ const EmotionalSection = () => {
                 <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white">
                   <Heart fill="currentColor" size={20} />
                 </div>
-            </div>
                 <span className="font-bold text-gray-900">Cuidado Real</span>
               </div>
               <p className="text-sm text-gray-500 italic">"Eles não são apenas pets, são o amor de alguém."</p>
