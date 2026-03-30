@@ -256,9 +256,14 @@ const Unidades = () => {
               </div>
               <p className="text-xs font-bold text-green-600 uppercase tracking-widest mb-2">{unidade.type}</p>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">{unidade.name}</h3>
-              <p className="text-gray-500 mb-8 flex items-start gap-2">
+              <a 
+                href={unidade.mapLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-green-600 mb-8 flex items-start gap-2 transition-colors cursor-pointer"
+              >
                 <MapPin size={18} className="mt-1 shrink-0" /> {unidade.address}
-              </p>
+            </a>
               <a 
                 href={unidade.whatsapp}
                 target="_blank"
