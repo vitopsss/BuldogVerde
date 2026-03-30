@@ -30,7 +30,8 @@ const UNIDADES = [
   {
     id: 'clinica-24h',
     name: 'Clínica Veterinária 24h',
-    address: 'Av. Coronel Teixeira, Manaus/AM',
+    address: 'Av. Coronel Teixeira, 6514 - Lírio Do Vale',
+    mapLink: 'https://maps.google.com/?q=Av.+Coronel+Teixeira,+6514+-+Lírio+Do+Vale,+Manaus+-+AM,+69030-480,+Brasil',
     whatsapp: 'https://wa.me/5592982853396',
     type: 'Emergência & Clínica',
     highlight: true
@@ -38,7 +39,8 @@ const UNIDADES = [
   {
     id: 'park-mall',
     name: 'Unidade Park Ephigênio Mall',
-    address: 'Rua Ephigênio Salles, Manaus/AM',
+    address: 'Av. Efigênio Salles, 2045 - Aleixo',
+    mapLink: 'https://maps.google.com/?q=Park+Mall+Ephigênio+-+Av.+Efigênio+Salles,+2045+-+Aleixo,+Manaus+-+AM,+69060-020,+Brasil',
     whatsapp: 'https://wa.me/5592984242894',
     type: 'Consultas & Estética'
   },
@@ -46,6 +48,7 @@ const UNIDADES = [
     id: 'express',
     name: 'Buldogue Verde Express',
     address: 'Farmácia Pet Especializada',
+    mapLink: '#',
     whatsapp: 'https://wa.me/5592981963761?text=Unidade+Express',
     type: 'Farmácia & Conveniência'
   }
