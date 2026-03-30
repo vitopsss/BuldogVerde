@@ -80,9 +80,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                <Heart className="text-white w-6 h-6" />
-              </div>
+              <img 
+                src="https://i.postimg.cc/4NS1nbgP/buldogueverde.jpg" 
+                alt="Logo Buldogue Verde" 
+                className="w-10 h-10 rounded-full object-cover border-2 border-green-500 bg-white"
+              />
               <span className={`text-2xl font-bold tracking-tight ${scrolled ? 'text-green-800' : 'text-white'}`}>
                 Buldogue<span className="text-green-500">Verde</span>
               </span>
@@ -366,9 +368,11 @@ const EmotionalSection = () => {
             </div>
             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-3xl shadow-xl border border-gray-100 max-w-[240px]">
               <div className="flex items-center gap-3 mb-2">
-                <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white">
-                  <Heart fill="currentColor" size={20} />
-                </div>
+                <img 
+                  src="https://i.postimg.cc/4NS1nbgP/buldogueverde.jpg" 
+                  alt="Logo Buldogue Verde" 
+                  className="w-10 h-10 rounded-full object-cover border-2 border-green-500 bg-white"
+                />
                 <span className="font-bold text-gray-900">Cuidado Real</span>
               </div>
               <p className="text-sm text-gray-500 italic">"Eles não são apenas pets, são o amor de alguém."</p>
