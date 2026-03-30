@@ -80,11 +80,13 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <div className="flex items-center gap-2">
-              <img 
-                src="https://i.postimg.cc/4NS1nbgP/buldogueverde.jpg" 
-                alt="Logo Buldogue Verde" 
-                className="w-10 h-10 rounded-full object-cover border-2 border-green-500 bg-white"
-              />
+              <div className="w-10 h-10 rounded-full border-2 border-green-500 bg-white overflow-hidden flex items-center justify-center shrink-0">
+                <img 
+                  src="https://i.postimg.cc/4NS1nbgP/buldogueverde.jpg" 
+                  alt="Logo Buldogue Verde" 
+                  className="w-full h-full object-cover scale-[1.4]"
+                />
+              </div>
               <span className={`text-2xl font-bold tracking-tight ${scrolled ? 'text-green-800' : 'text-white'}`}>
                 Buldogue<span className="text-green-500">Verde</span>
               </span>
@@ -368,11 +370,13 @@ const EmotionalSection = () => {
             </div>
             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-3xl shadow-xl border border-gray-100 max-w-[240px]">
               <div className="flex items-center gap-3 mb-2">
-                <img 
-                  src="https://i.postimg.cc/4NS1nbgP/buldogueverde.jpg" 
-                  alt="Logo Buldogue Verde" 
-                  className="w-10 h-10 rounded-full object-cover border-2 border-green-500 bg-white"
-                />
+                <div className="w-8 h-8 rounded-full border border-gray-200 bg-white overflow-hidden flex items-center justify-center shrink-0">
+                  <img 
+                    src="https://i.postimg.cc/4NS1nbgP/buldogueverde.jpg" 
+                    alt="Logo Buldogue Verde" 
+                    className="w-full h-full object-cover scale-[1.4]"
+                  />
+            </div>
                 <span className="font-bold text-gray-900">Cuidado Real</span>
               </div>
               <p className="text-sm text-gray-500 italic">"Eles não são apenas pets, são o amor de alguém."</p>
@@ -506,9 +510,14 @@ const CTASection = () => {
               </motion.a>
             </div>
             
-            <p className="mt-10 text-green-100 font-medium flex items-center justify-center gap-2">
+            <a 
+              href={UNIDADES[0].mapLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-10 text-green-100 font-medium flex items-center justify-center gap-2 hover:text-white hover:underline transition-all cursor-pointer"
+            >
               <MapPin size={18} /> {UNIDADES[0].address}
-            </p>
+            </a>
           </div>
         </div>
       </div>
@@ -546,15 +555,22 @@ const Footer = () => {
             <h4 className="font-bold text-gray-900 mb-6">Nossas Unidades</h4>
             <ul className="space-y-4 text-sm text-gray-500">
               {UNIDADES.map(u => (
-                <li key={u.id}>
+                <li key={u.id} className="flex flex-col gap-1 mb-2">
                   <a 
                     href={u.whatsapp} 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-green-600 block"
+                    className="font-bold text-gray-700 hover:text-green-600 transition-colors"
                   >
-                    <span className="font-bold text-gray-700">{u.name}</span>
-                    <span className="block text-xs">{u.address}</span>
+                    {u.name}
+                  </a>
+                  <a 
+                    href={u.mapLink} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-gray-500 hover:text-green-600 transition-colors"
+                  >
+                    {u.address}
                   </a>
                 </li>
               ))}
