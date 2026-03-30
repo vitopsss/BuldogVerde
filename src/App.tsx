@@ -543,11 +543,22 @@ const Footer = () => {
               A clínica veterinária 24h de Manaus que cuida do seu pet com o amor e a dedicação que ele merece.
             </p>
             <div className="flex gap-4">
-              {['Instagram', 'Facebook', 'YouTube'].map(social => (
-                <div key={social} className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-gray-400 hover:text-green-600 cursor-pointer transition-colors shadow-sm">
-                  <span className="text-[10px] font-bold">{social[0]}</span>
-                </div>
-              ))}
+              <a 
+                href="https://www.instagram.com/buldogueverde/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-gray-400 hover:text-green-600 transition-colors shadow-sm"
+              >
+                <span className="text-[10px] font-bold">I</span>
+              </a>
+              <a 
+                href="https://www.facebook.com/buldogueverde/?locale=pt_BR" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-gray-400 hover:text-green-600 transition-colors shadow-sm"
+              >
+                <span className="text-[10px] font-bold">F</span>
+              </a>
             </div>
           </div>
 
